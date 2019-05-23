@@ -21,6 +21,15 @@ def add_item (item, price, quantity = 1) #method I can use to keep track of item
     @items << item
   end
 
+def apply_discount #allows me to apply an employee discount discount in general
+if discount > 0
+  @take_off_price = (price * discount) / 100
+  @total -= @take_off_price
+  return "After discount, the total comes to $#{total}."
+else
+  return "There is no discount"
+end
+
 
   end
 
