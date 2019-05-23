@@ -29,6 +29,7 @@ if discount > 0 #if discount is greater than 0 run the method
 else
   return "There is no discount"
 end
+end
 
 
   end
