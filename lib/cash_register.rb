@@ -20,8 +20,6 @@ def add_item (item, price, quantity = 1) #method I can use to keep track of item
   else
     @items << item
   end
-end
-
 
 
   end
