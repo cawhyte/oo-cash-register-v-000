@@ -8,12 +8,12 @@ attr_accessor :total, :discount, :price, :items #allows me to access the methods
     @items = [] #keeps track of items purchased
 end
 
-def add_item (item, price, quantity = 1)
-  @price = price
-  @total += price * quantity
-  if quantity > 1
+def add_item (item, price, quantity = 1) #method I can use to keep track of items purchased and the quantity
+  @price = price #allows me to call price
+  @total += price * quantity #keeps track of the price multiplied by the quantity to charge the correct amount
+  if quantity > 1 #if quantity is greater than one add the items to the counter
     counter = 0
-    while counter < quantity
+    while counter < quantity #while the counter is greater than the quantity add the item to the @items array
       @items << item
       counter +=1
     end
