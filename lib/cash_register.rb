@@ -25,7 +25,7 @@ def apply_discount #allows me to apply an employee discount discount in general
 if discount > 0 #if discount is greater than 0 run the method
   @take_off_price = (price * discount) / 100 #calculates the discount by multiplying the price by the discount and dividing by 100
   @total -= @take_off_price #Keeps track of new total after discount
-  return "After discount, the total comes to $#{total}."
+  return "After discount, the total comes to $ #{total}."
 else
   return "There is no discount"
 end
