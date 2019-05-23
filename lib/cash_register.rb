@@ -7,4 +7,3 @@ class CashRegister
 
 
 end
-
