@@ -31,8 +31,8 @@ else
 end
 end
 
-def void_last_transaction
-  @total -= @price
+def void_last_transaction 
+  @total -= @price #clears transaction by subtracting price from total
 end
 
   end
