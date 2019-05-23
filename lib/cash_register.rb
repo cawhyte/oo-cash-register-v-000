@@ -27,7 +27,7 @@ if discount > 0 #if discount is greater than 0 run the method
   @total -= @take_off_price #Keeps track of new total after discount
   return "After discount, the total comes to $ #{total}."
 else
-  return "There is no discount to apply"
+  return "There is no discount to apply."
 end
 end
 
